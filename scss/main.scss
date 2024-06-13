@@ -1,0 +1,16 @@
+@import './utils/fonts'; //change
+@import './utils/utils'; //check later if need
+@import './utils/variables'; //colors and breakpoints
+@import './base'; //baza
+
+@import './components/links';
+
+@import './layouts/advantages-section';
+@import './layouts/condusef-section';
+@import './layouts/contact-section';
+@import './layouts/container';
+@import './layouts/footer';
+@import './layouts/header';
+@import './layouts/hero-section';
+@import './layouts/innovacion-section';
+@import './layouts/necesita-section';

@@ -1,0 +1,22 @@
+.hero-section {
+  padding: 50px 8px 0px 8px;
+  background: #f0920a;
+
+  @media screen and (min-width: $bp-desktop) {
+    overflow: hidden;
+  }
+
+  &__container {
+    @media screen and (min-width: $bp-desktop) {
+      display: flex;
+    }
+  }
+
+  &__text-part {
+    @media screen and (min-width: $bp-tablet) {
+      display: block;
+      align-items: start;
+      flex-grow: 1;
+    }
+  }
+}

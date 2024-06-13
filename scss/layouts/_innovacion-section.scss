@@ -1,0 +1,21 @@
+.innovacion-section {
+  background: linear-gradient(180deg, #ffffff 0%, #f0920a 0%);
+
+  @media screen and (min-width: $bp-desktop) {
+    overflow: hidden;
+  }
+
+  &__container {
+    @media screen and (min-width: $bp-desktop) {
+      display: flex;
+    }
+  }
+
+  &__text-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+  }
+}

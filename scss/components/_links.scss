@@ -1,0 +1,17 @@
+.link {
+  /*  color: var(--color-primary-dark); */
+  /* font-size: 16px; */
+  line-height: 4.5;
+  text-decoration: none;
+  transition: color 0.2s, transform 0.2s;
+
+  &:hover {
+    /*  color: var(--color-brand-normal); */
+    transform: scale(1.02);
+  }
+
+  @media screen and (min-width: $bp-tablet) {
+    font-size: 16px;
+    line-height: 4.5;
+  }
+}
