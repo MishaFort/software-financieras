@@ -39,8 +39,10 @@
         <div class="container">
           <div class="hero-section__container">
             <div class="hero-section__text-part">
-              <h2>¡CONOCE EL MEJOR SOFTWARE <span>PARA</span></h2>
-              <h1>FINANCIERAS!</h1>
+              <h1>
+                ¡CONOCE EL MEJOR<span>SOFTWARE </span><span>PARA</span>
+                <span>FINANCIERAS!</span>
+              </h1>
               <p>Justo lo que tu financiera necesita</p>
               <button type="button">AGENDAR DEMOSTRACIÓN</button>
             </div>
@@ -89,10 +91,14 @@
         <div class="container">
           <div class="innovacion-section__container">
             <div class="innovacion-section__text-part">
-              <h3>TECNOLOGÍA E</h3>
-              <h2>INNOVACIÓN</h2>
-              <h1>FINANCIERA</h1>
-              <p>EL SOFTWARE IDEAL PARA SOMOFES</p>
+              <h1 class="innovacion-section__title">
+                TECNOLOGÍA E
+                <span>INNOVACIÓN</span>
+                <span>FINANCIERA</span>
+              </h1>
+              <p class="innovacion-section__text-under-title">
+                EL SOFTWARE IDEAL PARA SOMOFES
+              </p>
             </div>
             <img src="./images/innovacion-device.png" alt="Innovacion device" />
             <!-- КАРТИНКА НЕ СКРАЮ - МЕЙБИ ОПЯТЬ АБСОЛЮТ -->
@@ -129,64 +135,105 @@
       <section class="advantages-section">
         <div class="container">
           <h2 class="advantages-section__title">SOFTWARE PARA FINANCIERAS</h2>
-          <ul class="advantages-section__container">
-            <li>
+          <ul class="advantages-section__list">
+            <li class="advantages-section__list-item">
               <img
+                class="advantages-section__list-item-image"
                 src="./images/icon-sheet-with-text.svg"
                 alt="sheet with text"
               />
-              <h4>SISTEMA DE ADMINISTRACIÓN DE CARTERA</h4>
-              Gestiona de manera eficiente y automática diversos productos
-              financieros: créditos grupales, individuales, de nómina y para
-              PyME’S.
+              <div class="advantages-section__list-item-text">
+                <h4 class="advantages-section__list-item-title">
+                  SISTEMA DE ADMINISTRACIÓN DE CARTERA
+                </h4>
+                Gestiona de manera eficiente y automática diversos productos
+                financieros: créditos grupales, individuales, de nómina y para
+                PyME’S.
+              </div>
             </li>
-            <li>
-              <img src="./images/icon-calculator.svg" alt="calculator" />
-              <h4>SISTEMA DE EXPEDIENTE CREDITICIO INTEGRADO</h4>
-              Generación de documentos de manera automática: contratos,
-              carátulas, calendarios de pagos, etc. Incluye la emisión, edición,
-              reposición y cancelación de sistemas de pago.
-            </li>
-            <li>
+            <li
+              class="advantages-section__list-item advantages-section__list-item--right-sided"
+            >
               <img
+                class="advantages-section__list-item-image"
+                src="./images/icon-calculator.svg"
+                alt="calculator"
+              />
+              <div class="advantages-section__list-item-text">
+                <h4 class="advantages-section__list-item-title">
+                  SISTEMA DE EXPEDIENTE CREDITICIO INTEGRADO
+                </h4>
+                Generación de documentos de manera automática: contratos,
+                carátulas, calendarios de pagos, etc. Incluye la emisión,
+                edición, reposición y cancelación de sistemas de pago.
+              </div>
+            </li>
+            <li class="advantages-section__list-item">
+              <img
+                class="advantages-section__list-item-image"
                 src="./images/icon-warning-triangle.svg"
                 alt="warning triangle"
               />
-              <h4>
-                SISTEMA DE PREVENCIÓN DE LAVADO DE DINERO (PLD) Y FINANCIAMIENTO
-                AL TERRORISMO
-              </h4>
-              Los cambios de comportamiento transaccional del cliente son
-              identificados de manera automática. Se da seguimiento
-              personalizado a los clientes detectados con un perfil de Alto
-              Riesgo, entre las que destacan la identificación de clientes que
-              se encuntran dentro de la lista PEP’S.
+              <div class="advantages-section__list-item-text">
+                <h4 class="advantages-section__list-item-title">
+                  SISTEMA DE PREVENCIÓN DE LAVADO DE DINERO (PLD) Y
+                  FINANCIAMIENTO AL TERRORISMO
+                </h4>
+                Los cambios de comportamiento transaccional del cliente son
+                identificados de manera automática. Se da seguimiento
+                personalizado a los clientes detectados con un perfil de Alto
+                Riesgo, entre las que destacan la identificación de clientes que
+                se encuntran dentro de la lista PEP’S.
+              </div>
             </li>
-            <li>
-              <img src="./images/icon-folder.svg" alt="folder" />
-              <h4>SISTEMA DE CONTABILIDAD ELECTRÓNICA PARA SOFOMES</h4>
-              Registra y administra las pólizas contables en el sistema. Incluye
-              Catálogo de Cuentas, consulta de Saldos Iniciales, Captura de
-              Pólizas, Cierre de Ejercicio, Balanza de Comprobación, Auxiliar de
-              Mayor, Balance General, Estado de Resultados, Libro Diario, Libro
-              Mayor, Plantilla de Eventos Contables, Configuración de Eventos
-              Contables y Rentabilidad por centro de costos dentro de cada
-              sucursal.
+            <li
+              class="advantages-section__list-item advantages-section__list-item--right-sided"
+            >
+              <img
+                class="advantages-section__list-item-image"
+                src="./images/icon-folder.svg"
+                alt="folder"
+              />
+              <div class="advantages-section__list-item-text">
+                <h4>SISTEMA DE CONTABILIDAD ELECTRÓNICA PARA SOFOMES</h4>
+                Registra y administra las pólizas contables en el sistema.
+                Incluye Catálogo de Cuentas, consulta de Saldos Iniciales,
+                Captura de Pólizas, Cierre de Ejercicio, Balanza de
+                Comprobación, Auxiliar de Mayor, Balance General, Estado de
+                Resultados, Libro Diario, Libro Mayor, Plantilla de Eventos
+                Contables, Configuración de Eventos Contables y Rentabilidad por
+                centro de costos dentro de cada sucursal.
+              </div>
             </li>
-            <li>
-              <img src="./images/icon-people.svg" alt="people" />
-              <h4>SISTEMA DE REPORTES</h4>
-              Consulta de informes configurados en el sistema: Reportes de
-              Cartera. Reportes Gerenciales. Reportes Administrativos. Reportes
-              Ejecutivos. Reportes Contables.
+            <li class="advantages-section__list-item">
+              <img
+                class="advantages-section__list-item-image"
+                src="./images/icon-people.svg"
+                alt="people"
+              />
+              <div class="advantages-section__list-item-text">
+                <h4>SISTEMA DE REPORTES</h4>
+                Consulta de informes configurados en el sistema: Reportes de
+                Cartera. Reportes Gerenciales. Reportes Administrativos.
+                Reportes Ejecutivos. Reportes Contables.
+              </div>
             </li>
-            <li>
-              <img src="./images/icon-mobile-touch.svg" alt="mobile touch" />
-              <h4>SISTEMA MÓVIL PARA GESTIÓN DE COBRANZA</h4>
-              Importación de Calendario de cobros: Clientes, Fechas, Montos y 
-              Dirección. Registro de Cobros: Fechas, Montos y Tipos de Pago
-              (Efectivo, Bancos, pago con tarjeta). Impresión de tickets.
-              Conexión en tiempo real. Funciona aunque no haya señal de celular.
+            <li
+              class="advantages-section__list-item advantages-section__list-item--right-sided"
+            >
+              <img
+                class="advantages-section__list-item-image"
+                src="./images/icon-mobile-touch.svg"
+                alt="mobile touch"
+              />
+              <div class="advantages-section__list-item-text">
+                <h4>SISTEMA MÓVIL PARA GESTIÓN DE COBRANZA</h4>
+                Importación de Calendario de cobros: Clientes, Fechas, Montos y 
+                Dirección. Registro de Cobros: Fechas, Montos y Tipos de Pago
+                (Efectivo, Bancos, pago con tarjeta). Impresión de tickets.
+                Conexión en tiempo real. Funciona aunque no haya señal de
+                celular.
+              </div>
             </li>
           </ul>
         </div>

@@ -9,14 +9,18 @@
   &__container {
     @media screen and (min-width: $bp-desktop) {
       display: flex;
+      justify-content: space-between;
     }
   }
 
   &__text-part {
     @media screen and (min-width: $bp-tablet) {
       display: block;
-      align-items: start;
+      /* align-items: start; */
+
       flex-grow: 1;
+
+      max-width: 560px;
     }
   }
 }

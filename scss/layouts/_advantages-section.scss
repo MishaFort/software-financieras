@@ -6,4 +6,31 @@
   &__title {
     text-align: center;
   }
+
+  /*   &__list {
+    display: flex;
+    flex-direction: column;
+  } */
+  &__list-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+
+    &--right-sided {
+      justify-content: flex-end;
+    }
+  }
+
+  &__list-item-image {
+    align-self: center;
+  }
+
+  &__list-item-text {
+    max-width: 520px;
+  }
+
+  &__list-item-title {
+    padding-top: 20px;
+    padding-bottom: 12px;
+  }
 }
