@@ -3,6 +3,8 @@
   /* max-width: 1440px; */
   margin: 0 auto;
   padding: 15px 8px 15px 8px;
+  background-color: var(--color-primary-light);
+  border-bottom: 1px solid #eaeaea;
 
   &__nav {
     display: flex;

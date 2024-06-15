@@ -1,17 +1,27 @@
 .link {
-  /*  color: var(--color-primary-dark); */
+  padding: 0 16px;
+  color: var(--color-header-links);
+  font-family: 'Actor', sans-serif;
   /* font-size: 16px; */
   line-height: 4.5;
   text-decoration: none;
   transition: color 0.2s, transform 0.2s;
 
   &:hover {
-    /*  color: var(--color-brand-normal); */
-    transform: scale(1.02);
+    color: var(--color-primary-light);
+    background-color: var(--color-header-links);
+    transition: all 0.3s ease;
+    transform: scale(1.2);
+
+    outline: 0;
+    overflow-wrap: anywhere;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    --wp-admin--admin-bar--height: 32px;
   }
 
-  @media screen and (min-width: $bp-tablet) {
+  /*   @media screen and (min-width: $bp-tablet) {
     font-size: 16px;
     line-height: 4.5;
-  }
+  } */
 }

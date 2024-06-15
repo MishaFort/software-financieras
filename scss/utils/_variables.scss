@@ -1,16 +1,15 @@
 :root {
+  --color-brand-normal: #4a2a92;
+  --color-primary-dark: #656565;
   --color-primary-light: #ffffff;
-  --color-primary-dark: #181817;
-  --color-secondary-light: #f1f3ff;
-  --color-secondary-dark: #839aa9;
-  --color-brand-normal: #ff9f0e;
-  --color-brand-light: #fcb62a;
-  --color-brand-dark: #ffaa00;
-  --color-shadow-normal: #18181714;
-  --color-shadow-dark: #1818170d;
-  --color-background-warm: #fffaf3;
-  --color-background-cold: #f9f9ff;
-  --color-icon-dark: #31261a;
+  --color-secondary-dark: #7b7b7b;
+  --color-background-warm: #f0920a;
+  --color-background-cool: #d6ccd4;
+  --color-header-links: #a09e9e;
+
+  --color-condusef-dark: #00000099;
+  --color-condusef-title-dark: #4a2a92cc;
+  --color-condusef-title-light: #f0920acc;
 }
 
 $bp-mobile: 480px;

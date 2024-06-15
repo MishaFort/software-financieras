@@ -1,7 +1,7 @@
 .condusef-section {
   padding-top: 65px;
   //min-height: 800px; //delete later
-  background-color: #d6ccd4;
+  background-color: var(--color-background-cool);
 
   @media screen and (min-width: $bp-desktop) {
     overflow: hidden;
@@ -23,24 +23,46 @@
   }
 
   &__text-part {
-    padding-bottom: 6px;
+    /*  padding-bottom: 6px; */
     max-width: 758px;
-    min-height: 745px;
-    text-align: center;
+    width: 100%;
+    /*  min-height: 745px; */
   }
 
   &__box {
-    /*  margin-bottom: 26px; */
-    margin-bottom: 26px;
-    padding: 20px 106px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 24px;
+
+    font-family: 'Open Sans Hebrew', sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+
     border: 10px solid #b9adb7;
+    border-radius: 90px;
     box-shadow: 0px 4px 4px 0px #00000040;
+  }
+
+  &__title {
+    margin-bottom: 38px;
+    max-width: 520px;
+    font-size: 50px;
+  }
+
+  &__title-list {
+    font-size: 34px;
   }
 
   &__buttons {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 26px;
+    padding-top: 26px;
+    padding-bottom: 32px;
   }
 
   &__button {

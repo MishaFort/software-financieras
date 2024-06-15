@@ -1,15 +1,13 @@
 .necesita-section {
   padding-top: 30px;
   padding-bottom: 15px;
-
-  &__title {
-    text-align: center;
-    padding-bottom: 25px;
-  }
+  background-color: var(--color-primary-light);
 
   &__list {
     display: flex;
     gap: 30px;
+    color: var(--color-primary-dark);
+    letter-spacing: 1.2px;
   }
 
   &__list-item {

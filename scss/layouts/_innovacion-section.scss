@@ -1,6 +1,4 @@
 .innovacion-section {
-  background: linear-gradient(180deg, #ffffff 0%, #f0920a 0%);
-
   @media screen and (min-width: $bp-desktop) {
     overflow: hidden;
   }
@@ -8,6 +6,7 @@
   &__container {
     @media screen and (min-width: $bp-desktop) {
       display: flex;
+      /*   justify-content: space-between; */
     }
   }
 
@@ -17,10 +16,20 @@
     justify-content: center;
     align-items: center;
     flex-grow: 1;
+
+    color: var(--color-primary-light);
+    font-family: 'Open Sans Hebrew', sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 1px;
+  }
+
+  &__text-part-container {
+    max-width: 330px;
   }
 
   &__title {
-    max-width: 330px;
-    font-size: 40px; //change
+    padding-top: 20px;
+    font-size: 40px;
   }
 }

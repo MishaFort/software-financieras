@@ -1,16 +1,11 @@
 .advantages-section {
   padding-top: 30px;
   padding-bottom: 36px;
-  background-color: #f0920a;
 
-  &__title {
-    text-align: center;
+  &__list {
+    color: var(--color-primary-light);
   }
 
-  /*   &__list {
-    display: flex;
-    flex-direction: column;
-  } */
   &__list-item {
     display: flex;
     align-items: flex-start;
