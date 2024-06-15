@@ -222,8 +222,10 @@
                 src="./images/icon-folder.svg"
                 alt="folder"
               />
-              <div class="advantages-section__list-item-text text-uppercase">
-                <h4>sistema de contabilidad electrónica para sofomes</h4>
+              <div class="advantages-section__list-item-text">
+                <h4 class="advantages-section__list-item-title text-uppercase">
+                  sistema de contabilidad electrónica para sofomes
+                </h4>
                 Registra y administra las pólizas contables en el sistema.
                 Incluye Catálogo de Cuentas, consulta de Saldos Iniciales,
                 Captura de Pólizas, Cierre de Ejercicio, Balanza de
@@ -239,11 +241,18 @@
                 src="./images/icon-people.svg"
                 alt="people"
               />
-              <div class="advantages-section__list-item-text text-uppercase">
-                <h4>sistema de reportes</h4>
-                Consulta de informes configurados en el sistema: Reportes de
-                Cartera. Reportes Gerenciales. Reportes Administrativos.
-                Reportes Ejecutivos. Reportes Contables.
+              <div class="advantages-section__list-item-text">
+                <h4 class="advantages-section__list-item-title text-uppercase">
+                  sistema de reportes
+                </h4>
+                Consulta de informes configurados en el sistema:
+                <ul class="advantages-section__list-item-content">
+                  <li>Reportes de Cartera.</li>
+                  <li>Reportes Gerenciales.</li>
+                  <li>Reportes Administrativos.</li>
+                  <li>Reportes Ejecutivos.</li>
+                  <li>Reportes Contables.</li>
+                </ul>
               </div>
             </li>
             <li
@@ -254,13 +263,23 @@
                 src="./images/icon-mobile-touch.svg"
                 alt="mobile touch"
               />
-              <div class="advantages-section__list-item-text text-uppercase">
-                <h4>sistema móvil para gestión de cobranza</h4>
-                Importación de Calendario de cobros: Clientes, Fechas, Montos y 
-                Dirección. Registro de Cobros: Fechas, Montos y Tipos de Pago
-                (Efectivo, Bancos, pago con tarjeta). Impresión de tickets.
-                Conexión en tiempo real. Funciona aunque no haya señal de
-                celular.
+              <div class="advantages-section__list-item-text">
+                <h4 class="advantages-section__list-item-title text-uppercase">
+                  sistema móvil para gestión de cobranza
+                </h4>
+                <ul class="advantages-section__list-item-content">
+                  <li>
+                    Importación de Calendario de cobros: Clientes, Fechas,
+                    Montos y  Dirección.
+                  </li>
+                  <li>
+                    Registro de Cobros: Fechas, Montos y Tipos de Pago
+                    (Efectivo, Bancos, pago con tarjeta).
+                  </li>
+                  <li>Impresión de tickets.</li>
+                  <li>Conexión en tiempo real.</li>
+                  <li>Funciona aunque no haya señal de celular.</li>
+                </ul>
               </div>
             </li>
           </ul>
@@ -283,7 +302,27 @@
 
       <!--                       ФУТЕР                         -->
       <!--                КАКОЙ ФУТЕР ДЕЛАТЬ?                  -->
-      <footer class="footer">© 2024 Software Financiera</footer>
+      <footer class="footer">
+        © 2024 Software Financiera
+        <div class="footer__socials">
+          <a
+            href="https://www.facebook.com/softwarefinancieras"
+            target="_blank"
+          >
+            <svg class="footer__socials-icon" width="32" height="32">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+          <a
+            href="https://www.instagram.com/softwarefinancieras/"
+            target="_blank"
+          >
+            <svg class="footer__socials-icon" width="32" height="32">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </div>
+      </footer>
     </main>
   </body>
 </html>
