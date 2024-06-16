@@ -4,9 +4,8 @@
   }
 
   &__container {
-    @media screen and (min-width: $bp-desktop) {
+    @media screen and (min-width: $bp-tablet) {
       display: flex;
-      /*   justify-content: space-between; */
     }
   }
 
@@ -22,6 +21,11 @@
     font-weight: 700;
     line-height: 1.2;
     letter-spacing: 1px;
+    text-align: center;
+
+    @media screen and (min-width: $bp-tablet) {
+      text-align: start;
+    }
   }
 
   &__text-part-container {
@@ -29,7 +33,30 @@
   }
 
   &__title {
-    padding-top: 20px;
-    font-size: 40px;
+    padding-top: 45px;
+    font-size: 30px;
+
+    @media screen and (min-width: $bp-desktop) {
+      padding-top: 20px;
+      font-size: 40px;
+    }
+  }
+
+  &__image-part {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    margin: 0 -20px;
+  }
+
+  &__image {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+
+    @media screen and (min-width: 420px) {
+      max-width: 400px;
+    }
   }
 }

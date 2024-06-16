@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sp">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,25 +10,60 @@
     <!--                    ХЕДЕР                      -->
     <header class="header">
       <div class="container">
-        <nav class="header__nav">
-          <a href="/">
-            <img
-              class="header__logo"
-              src="./images/logo.svg"
-              alt="Logo 'SOFTWARE FINANCIERAS'"
-            />
-          </a>
-          <ul class="header__menu">
-            <li><a class="link" href="/">Inicio</a></li>
-            <li>
-              <a class="link" href="#necesita-section">Caracteristicas</a>
-            </li>
-            <li>
-              <a class="link" href="#advantages-section">Modulos</a>
-            </li>
-            <li><a class="link" href="#contact-section">Demostración</a></li>
-          </ul>
-        </nav>
+        <div class="header__container">
+          <nav class="header__nav">
+            <a href="/">
+              <img
+                class="header__logo"
+                src="./images/logo.svg"
+                alt="Logo 'SOFTWARE FINANCIERAS'"
+              />
+            </a>
+            <ul class="header__menu">
+              <li><a class="link" href="/">Inicio</a></li>
+              <li>
+                <a class="link" href="#necesita-section">Caracteristicas</a>
+              </li>
+              <li>
+                <a class="link" href="#advantages-section">Modulos</a>
+              </li>
+              <li><a class="link" href="#contact-section">Demostración</a></li>
+            </ul>
+          </nav>
+          <button class="header__burger menu-btn-open" type="button">
+            <svg width="40" height="40">
+              <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
+
+          <div class="mobile-menu">
+            <button class="mobile-menu__btn-close menu-btn-close" type="button">
+              <svg width="28" height="28">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+            <ul class="mobile-menu__list">
+              <li>
+                <a class="mobile-menu__link" href="/">Inicio</a>
+              </li>
+              <li>
+                <a class="mobile-menu__link" href="#necesita-section">
+                  Caracteristicas
+                </a>
+              </li>
+              <li>
+                <a class="mobile-menu__link" href="#advantages-section">
+                  Modulos
+                </a>
+              </li>
+              <li>
+                <a class="mobile-menu__link" href="#contact-section">
+                  Demostración
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -41,30 +76,31 @@
             <div class="hero-section__text-part">
               <h1 class="hero-section__title text-uppercase">
                 ¡conoce el mejor
-                <span class="text-brand text-size-45 text-uppercase"
-                  >software
+                <span class="text-brand font-size-36-45 text-uppercase">
+                  software
                 </span>
-                <span class="text-size-35 text-uppercase">para</span>
-                <span class="text-brand text-size-74 text-uppercase"
-                  >financieras!</span
-                >
+                <span class="font-size-24-35 text-uppercase">para</span>
+                <span class="text-brand font-size-36-74 text-uppercase">
+                  financieras!
+                </span>
               </h1>
               <p class="hero-section__text-under-title">
                 Justo lo que tu financiera necesita
               </p>
               <button
-                class="button button--centered text-uppercase"
+                class="button button--centered hero-section__button text-uppercase"
                 type="button"
               >
                 agendar demostración
               </button>
             </div>
-            <!--  <div class="hero-section__image-part"> -->
-            <img
-              src="./images/hero-image-autorizar-creditos.png"
-              alt="Autorizar Creditos"
-            />
-            <!-- </div> -->
+            <div class="hero-section__image-part">
+              <img
+                class="hero-section__image"
+                src="./images/hero-image-autorizar-creditos.png"
+                alt="Autorizar Creditos"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -101,6 +137,15 @@
                 >
                   agendar<br />demostración
                 </button>
+                <a
+                  href="https://softwarefinancieras.com/software_api_redeco_reune_condusef"
+                >
+                  <img
+                    class="condusef-section__logo"
+                    src="./images/condusef-logo.png"
+                    alt="Logo 'Condusef'"
+                  />
+                </a>
               </div>
             </div>
           </div>
@@ -114,8 +159,8 @@
               <div class="innovacion-section__text-part-container">
                 <h1 class="innovacion-section__title text-uppercase">
                   tecnología e
-                  <span class="text-size-45 text-uppercase">innovación</span>
-                  <span class="text-brand text-size-50 text-uppercase">
+                  <span class="font-size-36-45 text-uppercase">innovación</span>
+                  <span class="text-brand font-size-40-50 text-uppercase">
                     financiera
                   </span>
                 </h1>
@@ -124,8 +169,13 @@
                 </p>
               </div>
             </div>
-            <img src="./images/innovacion-device.png" alt="Innovacion device" />
-            <!-- КАРТИНКА НЕ СКРАЮ - МЕЙБИ ОПЯТЬ АБСОЛЮТ -->
+            <div class="innovacion-section__image-part">
+              <img
+                class="innovacion-section__image"
+                src="./images/innovacion-device.png"
+                alt="Innovacion device"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -138,6 +188,7 @@
           <ul class="necesita-section__list">
             <li class="necesita-section__list-item">
               <img
+                class="necesita-section__image"
                 src="./images/necesita-paper-money-with-coins.jpg"
                 alt="money"
               />
@@ -145,12 +196,20 @@
               información al instante para la toma de decisiones.
             </li>
             <li class="necesita-section__list-item">
-              <img src="./images/necesita-protection.jpg" alt="money" />
+              <img
+                class="necesita-section__image"
+                src="./images/necesita-protection.jpg"
+                alt="money"
+              />
               Protección del mayor activo de tu empresa. Teniendo absoluto
               control de acceso, estabilidad y seguridad de tu información.
             </li>
             <li class="necesita-section__list-item">
-              <img src="./images/necesita-technology.jpg" alt="money" />
+              <img
+                class="necesita-section__image"
+                src="./images/necesita-technology.jpg"
+                alt="money"
+              />
               Tecnología que te permite versatilidad y eficiencia en tu
               operación, para poder brindar nuevos productos financieros.
             </li>
@@ -182,11 +241,13 @@
             <li
               class="advantages-section__list-item advantages-section__list-item--right-sided"
             >
-              <img
-                class="advantages-section__list-item-image"
-                src="./images/icon-calculator.svg"
-                alt="calculator"
-              />
+              <div class="advantages-section__list-item-image">
+                <img
+                  class="advantages-section__list-item-image"
+                  src="./images/icon-calculator.svg"
+                  alt="calculator"
+                />
+              </div>
               <div class="advantages-section__list-item-text">
                 <h4 class="advantages-section__list-item-title text-uppercase">
                   sistema de expediente crediticio integrado
@@ -217,11 +278,13 @@
             <li
               class="advantages-section__list-item advantages-section__list-item--right-sided"
             >
-              <img
-                class="advantages-section__list-item-image"
-                src="./images/icon-folder.svg"
-                alt="folder"
-              />
+              <div class="advantages-section__list-item-image">
+                <img
+                  class="advantages-section__list-item-image"
+                  src="./images/icon-folder.svg"
+                  alt="folder"
+                />
+              </div>
               <div class="advantages-section__list-item-text">
                 <h4 class="advantages-section__list-item-title text-uppercase">
                   sistema de contabilidad electrónica para sofomes
@@ -258,11 +321,13 @@
             <li
               class="advantages-section__list-item advantages-section__list-item--right-sided"
             >
-              <img
-                class="advantages-section__list-item-image"
-                src="./images/icon-mobile-touch.svg"
-                alt="mobile touch"
-              />
+              <div class="advantages-section__list-item-image">
+                <img
+                  class="advantages-section__list-item-image"
+                  src="./images/icon-mobile-touch.svg"
+                  alt="mobile touch"
+                />
+              </div>
               <div class="advantages-section__list-item-text">
                 <h4 class="advantages-section__list-item-title text-uppercase">
                   sistema móvil para gestión de cobranza
@@ -295,34 +360,33 @@
           <p class="contact-section__under-title">
             Agenda una demostración gratuita del sistema
           </p>
-          <!--                    form                          -->
+
           <form action=""></form>
         </div>
       </section>
-
-      <!--                       ФУТЕР                         -->
-      <!--                КАКОЙ ФУТЕР ДЕЛАТЬ?                  -->
-      <footer class="footer">
-        © 2024 Software Financiera
-        <div class="footer__socials">
-          <a
-            href="https://www.facebook.com/softwarefinancieras"
-            target="_blank"
-          >
-            <svg class="footer__socials-icon" width="32" height="32">
-              <use href="./images/icons.svg#icon-facebook"></use>
-            </svg>
-          </a>
-          <a
-            href="https://www.instagram.com/softwarefinancieras/"
-            target="_blank"
-          >
-            <svg class="footer__socials-icon" width="32" height="32">
-              <use href="./images/icons.svg#icon-instagram"></use>
-            </svg>
-          </a>
-        </div>
-      </footer>
     </main>
+
+    <!--                       ФУТЕР                         -->
+    <!--                КАКОЙ ФУТЕР ДЕЛАТЬ?                  -->
+    <footer class="footer">
+      © 2024 Software Financiera
+      <div class="footer__socials">
+        <a href="https://www.facebook.com/softwarefinancieras" target="_blank">
+          <svg class="footer__socials-icon" width="32" height="32">
+            <use href="./images/icons.svg#icon-facebook"></use>
+          </svg>
+        </a>
+        <a
+          href="https://www.instagram.com/softwarefinancieras/"
+          target="_blank"
+        >
+          <svg class="footer__socials-icon" width="32" height="32">
+            <use href="./images/icons.svg#icon-instagram"></use>
+          </svg>
+        </a>
+      </div>
+    </footer>
+
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

@@ -1,12 +1,13 @@
 .hero-section {
-  padding: 50px 8px 0px 8px;
+  padding-top: 30px;
 
-  @media screen and (min-width: $bp-desktop) {
+  @media screen and (min-width: $bp-tablet) {
     overflow: hidden;
+    padding-top: 50px;
   }
 
   &__container {
-    @media screen and (min-width: $bp-desktop) {
+    @media screen and (min-width: $bp-tablet) {
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -14,31 +15,74 @@
   }
 
   &__text-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    color: var(--color-primary-light);
+    line-height: 1.4;
+    letter-spacing: 1px;
+
     @media screen and (min-width: $bp-tablet) {
       display: block;
-      /* align-items: start; */
+      max-width: 450px;
+    }
 
-      /* flex-grow: 1; */
-
-      color: var(--color-primary-light);
-      line-height: 1.4;
-      letter-spacing: 1px;
+    @media screen and (min-width: $bp-desktop) {
       max-width: 560px;
     }
   }
 
   &__title {
     font-family: 'Open Sans Hebrew', sans-serif;
-    font-size: 40px;
+    font-size: 24px;
+    line-height: 1.15;
+    text-align: center;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 40px;
+      text-align: start;
+    }
   }
 
   &__text-under-title {
-    margin: -8px 0 77px;
-    /* margin-top: -8px; */
-    padding-left: 36px;
-    /*  padding-bottom: 77px; */
-    font-size: 17px;
+    margin-bottom: 12px;
+    font-size: 20px;
     line-height: 1.85;
     letter-spacing: 1.1px;
+    text-align: center;
+
+    @media screen and (min-width: $bp-tablet) {
+      margin: -8px 0 77px;
+      padding-left: 36px;
+      font-size: 17px;
+      text-align: start;
+    }
+  }
+
+  &__button {
+    margin-bottom: 20px;
+
+    @media screen and (min-width: $bp-tablet) {
+      margin: 0;
+    }
+  }
+
+  &__image-part {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    margin: 0 -20px;
+  }
+
+  &__image {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+
+    @media screen and (min-width: 420px) {
+      max-width: 400px;
+    }
   }
 }
