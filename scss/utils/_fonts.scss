@@ -8,7 +8,6 @@
 @font-face {
   font-display: swap;
   font-family: 'Actor';
-  font-style: normal;
   font-weight: 400;
   src: url('../fonts/actor-v17-latin-regular.woff2') format('woff2');
 }
@@ -37,7 +36,20 @@
 @font-face {
   font-display: swap;
   font-family: 'Bebas Neue';
-  font-style: normal;
   font-weight: 400;
   src: url('../fonts/bebas-neue-v14-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Futura Md BT';
+  font-weight: 400;
+  src: url('../fonts/futura-md-bt-medium.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Futura Md BT';
+  font-weight: 700;
+  src: url('../fonts/futura-md-bt-bold.woff2') format('woff2');
 }
