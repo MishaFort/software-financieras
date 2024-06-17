@@ -13,13 +13,9 @@
       margin-bottom: 54px;
       font-size: 40px;
     }
-  }
 
-  &__list {
-    margin-bottom: 36px;
-
-    @media screen and (min-width: $bp-desktop) {
-      margin-bottom: 20px;
+    &--warm {
+      color: var(--color-background-warm);
     }
   }
 
@@ -30,9 +26,18 @@
     gap: 4px;
     margin-bottom: 16px;
 
+    @media screen and (min-width: 600px) {
+      padding: 0 70px;
+    }
+
+    @media screen and (min-width: $bp-tablet) {
+      padding: 0 100px;
+    }
+
     @media screen and (min-width: $bp-desktop) {
       flex-direction: row;
       gap: 90px;
+      padding: 0;
     }
 
     &--mirrored {
@@ -46,7 +51,8 @@
     }
 
     &--last {
-      margin-bottom: 24px;
+      margin-bottom: 0;
+      padding-bottom: 56px;
     }
   }
 
@@ -59,6 +65,10 @@
 
     @media screen and (min-width: $bp-desktop) {
       display: none;
+    }
+
+    &--warm {
+      color: var(--color-condusef-title-light);
     }
   }
 
@@ -84,6 +94,10 @@
       font-size: 26px;
       color: var(--color-condusef-title-dark);
     }
+
+    &--warm {
+      color: var(--color-condusef-title-light);
+    }
   }
 
   &__list-item-text {
@@ -102,6 +116,7 @@
 
   &__list-item-image-1 {
     margin-bottom: 24px;
+
     @media screen and (min-width: $bp-desktop) {
       margin-left: 94px;
       margin-bottom: 0;
@@ -110,17 +125,60 @@
 
   &__list-item-image-2 {
     margin: -4px 0 12px 0;
+
     @media screen and (min-width: $bp-desktop) {
       margin-left: 267px;
     }
   }
 
   &__list-item-image-3 {
-    max-width: 360px;
     margin: 0 -20px;
+    max-width: 360px;
 
     @media screen and (min-width: $bp-desktop) {
       margin-left: 43px;
+      max-width: 100%;
+    }
+  }
+
+  &__list-item-image-4 {
+    margin-bottom: 16px;
+    max-width: 280px;
+
+    @media screen and (min-width: $bp-desktop) {
+      margin-left: 169px;
+      margin-bottom: 0;
+      max-width: 100%;
+    }
+  }
+
+  &__list-item-image-5 {
+    margin-left: 65px;
+    margin-bottom: 16px;
+
+    @media screen and (min-width: $bp-desktop) {
+      margin-left: 94px;
+      margin-bottom: 0;
+    }
+  }
+
+  &__list-item-image-6 {
+    margin-bottom: 16px;
+
+    @media screen and (min-width: $bp-desktop) {
+      margin-left: 259px;
+      margin-bottom: 0px;
+    }
+  }
+
+  &__list-item-image-7 {
+    margin-top: 16px;
+    margin-bottom: -32px;
+
+    @media screen and (min-width: $bp-desktop) {
+      margin-top: 0;
+      margin-left: 171px;
+      margin-bottom: 0;
     }
   }
 }

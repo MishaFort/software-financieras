@@ -59,7 +59,7 @@
       color: var(--color-brand-normal);
       background-color: transparent;
       border: 5px solid #5ed513;
-      transition: color 0.2, background-color 0.2s;
+      transition: color 0.2s, background-color 0.2s, transform 0.2s;
 
       &:hover {
         color: var(--color-primary-light);
@@ -70,6 +70,10 @@
         padding: 0 85px;
         border-width: 10px;
       }
+    }
+
+    &--light {
+      color: var(--color-primary-light);
     }
   }
 }

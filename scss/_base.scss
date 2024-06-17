@@ -14,6 +14,7 @@ body {
   line-height: 1.85; //change later
 
   -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
 
   @media screen and (min-width: $bp-desktop) {
     font-size: 16px;
