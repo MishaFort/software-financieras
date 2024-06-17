@@ -4,10 +4,14 @@
   padding-bottom: 60px;
   color: var(--color-primary-light);
   font-family: 'Futura Md BT', sans-serif;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 700;
   line-height: 1.2;
   text-align: center;
+
+  @media screen and (min-width: $bp-desktop) {
+    font-size: 24px;
+  }
 
   &__socials {
     display: flex;
