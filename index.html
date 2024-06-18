@@ -254,7 +254,7 @@
             <li class="advantages-section__list-item">
               <img
                 class="advantages-section__list-item-image"
-                src="./images/icon-sheet-with-text.svg"
+                src="./images/sheet-with-text.webp"
                 alt="sheet with text"
               />
               <div class="advantages-section__list-item-text">
@@ -272,7 +272,7 @@
               <div class="advantages-section__list-item-image">
                 <img
                   class="advantages-section__list-item-image"
-                  src="./images/icon-calculator.svg"
+                  src="./images/calculator.webp"
                   alt="calculator"
                 />
               </div>
@@ -288,7 +288,7 @@
             <li class="advantages-section__list-item">
               <img
                 class="advantages-section__list-item-image"
-                src="./images/icon-warning-triangle.svg"
+                src="./images/warning-triangle.webp"
                 alt="warning triangle"
               />
               <div class="advantages-section__list-item-text">
@@ -309,7 +309,7 @@
               <div class="advantages-section__list-item-image">
                 <img
                   class="advantages-section__list-item-image"
-                  src="./images/icon-folder.svg"
+                  src="./images/folder.webp"
                   alt="folder"
                 />
               </div>
@@ -329,7 +329,7 @@
             <li class="advantages-section__list-item">
               <img
                 class="advantages-section__list-item-image"
-                src="./images/icon-people.svg"
+                src="./images/people.webp"
                 alt="people"
               />
               <div class="advantages-section__list-item-text">
@@ -352,7 +352,7 @@
               <div class="advantages-section__list-item-image">
                 <img
                   class="advantages-section__list-item-image"
-                  src="./images/icon-mobile-touch.svg"
+                  src="./images/mobile-touch.webp"
                   alt="mobile touch"
                 />
               </div>
@@ -379,7 +379,6 @@
         </div>
       </section>
       <!--                   Section 6                     -->
-      <!--               КАКУЮ ФОРМУ ДЕЛАТЬ?               -->
       <section class="contact-section" id="contact-section">
         <div class="container">
           <h2 class="section-title text-uppercase">
@@ -389,7 +388,145 @@
             Agenda una demostración gratuita del sistema
           </p>
 
-          <form action=""></form>
+          <div class="contact-section__form">
+            <form name="modal-form" autocomplete="off">
+              <div class="input">
+                <svg class="input__icon">
+                  <use href="./images/icons.svg#icon-name"></use>
+                </svg>
+                <div class="input__text">
+                  <label class="input__label visually-hidden" for="user-name">
+                    Nombre
+                  </label>
+                  <input
+                    class="input__control"
+                    type="text"
+                    name="user-name"
+                    id="user-name"
+                    placeholder="Nombre"
+                    pattern="[a-zA-Z0-9à-üÀ-Ü_ ]{1,30}"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="input">
+                <svg class="input__icon">
+                  <use href="./images/icons.svg#icon-email"></use>
+                </svg>
+                <div class="input__text">
+                  <label class="input__label visually-hidden" for="user-name">
+                    Correo electrónico
+                  </label>
+                  <input
+                    class="input__control"
+                    type="email"
+                    name="user-email"
+                    id="user-email"
+                    placeholder="Correo electrónico"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="input">
+                <svg class="input__icon">
+                  <use href="./images/icons.svg#icon-country"></use>
+                </svg>
+                <div class="input__text">
+                  <label class="input__label visually-hidden" for="user-tel">
+                    País
+                  </label>
+                  <input
+                    class="input__control"
+                    type="text"
+                    name="country"
+                    id="country"
+                    placeholder="País"
+                    pattern="[a-zA-Z '-]{1,40}"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="input">
+                <svg class="input__icon">
+                  <use href="./images/icons.svg#icon-company"></use>
+                </svg>
+                <div class="input__text">
+                  <label class="input__label visually-hidden" for="user-email">
+                    Financiera
+                  </label>
+                  <input
+                    class="input__control"
+                    type="text"
+                    name="company-name"
+                    id="company-name"
+                    placeholder="Financiera"
+                    pattern="[a-zA-Z0-9à-üÀ-Ü_ ]{1,30}"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="input">
+                <svg class="input__icon">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+                <div class="input__text">
+                  <label class="input__label visually-hidden" for="user-tel">
+                    Teléfono (WhatsApp)
+                  </label>
+                  <input
+                    class="input__control"
+                    type="tel"
+                    name="user-tel"
+                    id="user-tel"
+                    placeholder="Teléfono (WhatsApp)"
+                    pattern="[0-9+ ()-]{8,20}"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="input">
+                <svg class="input__icon">
+                  <use href="./images/icons.svg#icon-clock"></use>
+                </svg>
+                <div class="input__text">
+                  <label class="input__label visually-hidden" for="user-email">
+                    Fecha y Hora
+                  </label>
+                  <input
+                    class="input__control"
+                    type="datetime-local"
+                    name="datetime"
+                    id="datetime"
+                    placeholder="Fecha y Hora"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="input__button-container">
+                <button class="button__contact" type="submit">Enviar</button>
+
+                <div class="checkbox">
+                  <input
+                    class="checkbox__input visually-hidden"
+                    type="checkbox"
+                    id="terms-conditions"
+                    name="terms-conditions"
+                    required
+                  />
+                  <label class="checkbox__label" for="terms-conditions">
+                    Acepto las políticas de privacidad
+                  </label>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
       </section>
     </main>
