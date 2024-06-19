@@ -664,7 +664,12 @@
     <script src="./js/smooth-scroll.js"></script>
 
     <script>
-      AOS.init();
+      AOS.init({
+        disable: function () {
+          var maxWidth = 1140;
+          return window.innerWidth < maxWidth;
+        },
+      });
     </script>
   </body>
 </html>

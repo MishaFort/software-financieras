@@ -381,7 +381,12 @@
         </div>
       </section>
       <!--                   Section 2                       -->
-      <section class="condusef-demostracion">
+      <section
+        class="condusef-demostracion"
+        data-aos="zoom-in"
+        data-aos-duration="1000"
+        data-aos-once="true"
+      >
         <div class="container">
           <h1 class="condusef-demostracion__title text-uppercase">
             <span class="text-light">contacta </span>con nosotros para
@@ -406,6 +411,9 @@
           <div class="condusef-contact__container">
             <h1
               class="condusef-contact__title section-title__condusef text-uppercase"
+              data-aos="zoom-in"
+              data-aos-duration="1500"
+              data-aos-once="true"
             >
               formulario de contacto
             </h1>
@@ -417,9 +425,17 @@
               "
               src="./images/smiling-girl-condusef-desktop.png"
               alt="Condusef"
+              data-aos="slide-right"
+              data-aos-duration="1000"
+              data-aos-once="true"
             />
 
-            <div class="condusef-contact__form">
+            <div
+              class="condusef-contact__form"
+              data-aos="slide-left"
+              data-aos-duration="1500"
+              data-aos-once="true"
+            >
               <!--                   form                       -->
               <form style="z-index: 1" name="modal-form" autocomplete="off">
                 <div class="input">
@@ -569,7 +585,7 @@
         </div>
       </section>
     </main>
-
+    <!--                       ФУТЕР                         -->
     <footer class="footer">
       &copy 2024 Software Financiera
       <div class="footer__socials">
@@ -592,7 +608,12 @@
     <script src="./js/smooth-scroll.js"></script>
 
     <script>
-      AOS.init();
+      AOS.init({
+        disable: function () {
+          var maxWidth = 1140;
+          return window.innerWidth < maxWidth;
+        },
+      });
     </script>
   </body>
 </html>
