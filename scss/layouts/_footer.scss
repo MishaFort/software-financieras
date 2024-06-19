@@ -1,7 +1,6 @@
 .footer {
   padding-top: 43px;
-  /* padding-bottom: 72px; */
-  padding-bottom: 60px;
+  padding-bottom: 43px;
   color: var(--color-primary-light);
   font-family: 'Futura Md BT', sans-serif;
   font-size: 20px;
@@ -11,6 +10,7 @@
 
   @media screen and (min-width: $bp-desktop) {
     font-size: 24px;
+    padding-bottom: 60px;
   }
 
   &__socials {

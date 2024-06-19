@@ -8,14 +8,14 @@
   line-height: 1.1;
   letter-spacing: 1.8px;
 
-  border: 3px solid #07fd19;
+  border: 3px solid var(--color-button-light);
   border-radius: 30px;
 
   cursor: pointer;
   transition: background-color 0.2s, transform 0.2s;
 
   &:hover {
-    background-color: #07fd19;
+    background-color: var(--color-button-light);
     transform: scale(0.9);
   }
 
@@ -58,12 +58,12 @@
       padding: 3px 30px;
       color: var(--color-brand-normal);
       background-color: transparent;
-      border: 5px solid #5ed513;
+      border: 5px solid var(--color-button-normal);
       transition: color 0.2s, background-color 0.2s, transform 0.2s;
 
       &:hover {
         color: var(--color-primary-light);
-        background-color: #5ed513;
+        background-color: var(--color-button-normal);
       }
 
       @media screen and (min-width: $bp-desktop) {
@@ -91,7 +91,7 @@
     transition: background-color 0.3s;
 
     &:hover {
-      background-color: #5ed513;
+      background-color: var(--color-button-normal);
       cursor: pointer;
     }
 
