@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" style="overflow-x: hidden">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Software para Financieras. El mejor Software para Financieras. Somos expertos en SOFOMES, ENR, Microfinanzas y Microcrédito.¡Agenda tu demostración GRATUITA YA!"
+    />
     <title>EL MEJOR SOFTWARE PARA FINANCIERAS | SOFOM ENR</title>
     <link rel="stylesheet" href="./css/main.min.css" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
-    />
+    <link rel="stylesheet" href="./css/aos.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   </head>
   <body>
@@ -33,18 +34,19 @@
                 </a>
               </li>
               <li>
-                <a class="link smooth-scroll" href="#advantages-section"
-                  >Modulos</a
-                >
+                <a class="link smooth-scroll" href="#advantages-section">
+                  Modulos
+                </a>
               </li>
               <li>
-                <a class="link smooth-scroll" href="#contact-section"
-                  >Demostración</a
-                >
+                <a class="link smooth-scroll" href="#contact-section">
+                  Demostración
+                </a>
               </li>
             </ul>
           </nav>
           <button class="header__burger menu-btn-open" type="button">
+            <p class="visually-hidden">Open burger menu</p>
             <svg width="40" height="40">
               <use href="./images/icons.svg#icon-menu"></use>
             </svg>
@@ -52,15 +54,16 @@
 
           <div class="mobile-menu">
             <button class="mobile-menu__btn-close menu-btn-close" type="button">
+              <p class="visually-hidden">Close burger menu</p>
               <svg width="28" height="28">
                 <use href="./images/icons.svg#icon-close"></use>
               </svg>
             </button>
             <ul class="mobile-menu__list">
               <li>
-                <a class="mobile-menu__link mobile-menu-link" href="/"
-                  >Inicio</a
-                >
+                <a class="mobile-menu__link mobile-menu-link" href="/">
+                  Inicio
+                </a>
               </li>
               <li>
                 <a
@@ -97,7 +100,7 @@
       <!--                   Section 1                       -->
       <section
         class="hero-section"
-        data-aos="slide-left"
+        data-aos="fade-down-left"
         data-aos-duration="1500"
         data-aos-once="true"
       >
@@ -173,21 +176,17 @@
                 </ul>
               </div>
               <div class="condusef-section__buttons">
-                <a class="link__a" href="/condusef.html">
-                  <button
-                    class="button button__condusef text-uppercase"
-                    type="button"
-                  >
-                    más información
-                  </button>
+                <a
+                  class="link__a button button__condusef text-uppercase"
+                  href="/condusef.html"
+                >
+                  más información
                 </a>
-                <a class="link__a" href="/condusef.html#condusef-contact">
-                  <button
-                    class="button button__condusef button__condusef--transparent text-uppercase"
-                    type="button"
-                  >
-                    agendar<br />demostración
-                  </button>
+                <a
+                  class="link__a button button__condusef button__condusef--transparent text-uppercase"
+                  href="/condusef.html#condusef-contact"
+                >
+                  agendar<br />demostración
                 </a>
                 <a href="/condusef.html">
                   <img
@@ -333,9 +332,9 @@
                 alt="sheet with text"
               />
               <div class="advantages-section__list-item-text">
-                <h4 class="advantages-section__list-item-title text-uppercase">
+                <h3 class="advantages-section__list-item-title text-uppercase">
                   sistema de administración de cartera
-                </h4>
+                </h3>
                 Gestiona de manera eficiente y automática diversos productos
                 financieros: créditos grupales, individuales, de nómina y para
                 PyME’S.
@@ -355,9 +354,9 @@
                 />
               </div>
               <div class="advantages-section__list-item-text">
-                <h4 class="advantages-section__list-item-title text-uppercase">
+                <h3 class="advantages-section__list-item-title text-uppercase">
                   sistema de expediente crediticio integrado
-                </h4>
+                </h3>
                 Generación de documentos de manera automática: contratos,
                 carátulas, calendarios de pagos, etc. Incluye la emisión,
                 edición, reposición y cancelación de sistemas de pago.
@@ -375,10 +374,10 @@
                 alt="warning triangle"
               />
               <div class="advantages-section__list-item-text">
-                <h4 class="advantages-section__list-item-title text-uppercase">
+                <h3 class="advantages-section__list-item-title text-uppercase">
                   sistema de prevención de lavado de dinero (pld) y
                   financiamiento al terrorismo
-                </h4>
+                </h3>
                 Los cambios de comportamiento transaccional del cliente son
                 identificados de manera automática. Se da seguimiento
                 personalizado a los clientes detectados con un perfil de Alto
@@ -400,9 +399,9 @@
                 />
               </div>
               <div class="advantages-section__list-item-text">
-                <h4 class="advantages-section__list-item-title text-uppercase">
+                <h3 class="advantages-section__list-item-title text-uppercase">
                   sistema de contabilidad electrónica para sofomes
-                </h4>
+                </h3>
                 Registra y administra las pólizas contables en el sistema.
                 Incluye Catálogo de Cuentas, consulta de Saldos Iniciales,
                 Captura de Pólizas, Cierre de Ejercicio, Balanza de
@@ -424,9 +423,9 @@
                 alt="people"
               />
               <div class="advantages-section__list-item-text">
-                <h4 class="advantages-section__list-item-title text-uppercase">
+                <h3 class="advantages-section__list-item-title text-uppercase">
                   sistema de reportes
-                </h4>
+                </h3>
                 Consulta de informes configurados en el sistema:
                 <ul class="advantages-section__list-item-content">
                   <li>Reportes de Cartera.</li>
@@ -451,9 +450,9 @@
                 />
               </div>
               <div class="advantages-section__list-item-text">
-                <h4 class="advantages-section__list-item-title text-uppercase">
+                <h3 class="advantages-section__list-item-title text-uppercase">
                   sistema móvil para gestión de cobranza
-                </h4>
+                </h3>
                 <ul class="advantages-section__list-item-content">
                   <li>
                     Importación de Calendario de cobros: Clientes, Fechas,
@@ -644,7 +643,11 @@
     <footer class="footer">
       &copy 2024 Software Financiera
       <div class="footer__socials">
-        <a href="https://www.facebook.com/softwarefinancieras" target="_blank">
+        <a
+          href="https://www.facebook.com/softwarefinancieras"
+          aria-label="Facebook page"
+          target="_blank"
+        >
           <svg class="footer__socials-icon" width="32" height="32">
             <use href="./images/icons.svg#icon-facebook"></use>
           </svg>
@@ -652,6 +655,7 @@
         <a
           href="https://www.instagram.com/softwarefinancieras/"
           target="_blank"
+          aria-label="Instagram page"
         >
           <svg class="footer__socials-icon" width="32" height="32">
             <use href="./images/icons.svg#icon-instagram"></use>
