@@ -17,7 +17,6 @@
     />
 
     <link rel="stylesheet" href="./css/aos.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   </head>
   <body>
     <!--                    ХЕДЕР                      -->
@@ -503,7 +502,7 @@
             data-aos-duration="1500"
             data-aos-once="true"
           >
-            <form name="modal-form" autocomplete="off">
+            <form name="modal-form" autocomplete="on" id="contact-form">
               <div class="input">
                 <svg class="input__icon">
                   <use href="./images/icons.svg#icon-name"></use>
@@ -673,16 +672,39 @@
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/smooth-scroll.js"></script>
 
-    <!-- <script>
-      AOS.init({
-        disable: function () {
-          var maxWidth = 1140;
-          return window.innerWidth < maxWidth;
-        },
-      });
-    </script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
       AOS.init();
+    </script>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: 'cGquAHqEOJ55b0IuJ',
+        });
+      })();
+    </script>
+    <script type="text/javascript">
+      window.onload = function () {
+        document
+          .getElementById('contact-form')
+          .addEventListener('submit', function (event) {
+            event.preventDefault();
+            emailjs.sendForm('service_pnqld1g', 'contact_form', this).then(
+              () => {
+                console.log('SUCCESS!');
+                window.location.reload();
+              },
+              error => {
+                console.log('FAILED...', error);
+              }
+            );
+          });
+      };
     </script>
   </body>
 </html>
