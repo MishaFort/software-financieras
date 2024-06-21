@@ -502,7 +502,7 @@
             data-aos-duration="1500"
             data-aos-once="true"
           >
-            <form name="modal-form" autocomplete="on" id="contact-form">
+            <form name="form" autocomplete="on" id="contact-form">
               <div class="input">
                 <svg class="input__icon">
                   <use href="./images/icons.svg#icon-name"></use>
@@ -623,7 +623,13 @@
               </div>
 
               <div class="input__button-container">
-                <button class="button__contact" type="submit">Enviar</button>
+                <button
+                  class="button__contact"
+                  id="popup-trigger"
+                  type="submit"
+                >
+                  Enviar
+                </button>
 
                 <div class="checkbox">
                   <input
@@ -639,6 +645,11 @@
                 </div>
               </div>
             </form>
+          </div>
+        </div>
+        <div class="backdrop is-hidden">
+          <div class="popup">
+            <p class="popup__text">Tu solicitud está enviando...</p>
           </div>
         </div>
       </section>
@@ -706,5 +717,7 @@
           });
       };
     </script>
+
+    <script src="./js/pop-up.js"></script>
   </body>
 </html>
