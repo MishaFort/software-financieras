@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es" style="overflow-x: hidden">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -105,7 +105,7 @@
       <!--                   Section 1                       -->
       <section
         class="hero-section"
-        data-aos="fade-down-left"
+        data-aos="fade-down-right"
         data-aos-duration="1500"
         data-aos-once="true"
       >
@@ -518,7 +518,6 @@
                     id="user-name"
                     placeholder="Nombre"
                     pattern="[a-zA-Z0-9à-üÀ-Ü_ ]{1,30}"
-                    required
                   />
                 </div>
               </div>
@@ -538,7 +537,6 @@
                     id="user-email"
                     placeholder="Correo electrónico"
                     pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-                    required
                   />
                 </div>
               </div>
@@ -558,7 +556,6 @@
                     id="country"
                     placeholder="País"
                     pattern="[a-zA-Z '-]{1,40}"
-                    required
                   />
                 </div>
               </div>
@@ -578,7 +575,6 @@
                     id="company-name"
                     placeholder="Financiera"
                     pattern="[a-zA-Z0-9à-üÀ-Ü_ ]{1,30}"
-                    required
                   />
                 </div>
               </div>
@@ -598,7 +594,6 @@
                     id="user-tel"
                     placeholder="Teléfono (WhatsApp)"
                     pattern="[0-9+ ()-]{8,20}"
-                    required
                   />
                 </div>
               </div>
@@ -617,7 +612,6 @@
                     name="datetime"
                     id="datetime"
                     placeholder="Fecha y Hora"
-                    required
                   />
                 </div>
               </div>
@@ -644,7 +638,6 @@
                     type="checkbox"
                     id="terms-conditions"
                     name="terms-conditions"
-                    required
                   />
                   <label
                     class="checkbox__label"
@@ -699,6 +692,12 @@
       AOS.init();
     </script>
 
+    <script src="./js/pop-up.js"></script>
+
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+
+    <script src="./js/contact-form-validator.js"></script>
+
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
@@ -710,7 +709,9 @@
         });
       })();
     </script>
-    <script type="text/javascript">
+
+    <!-- Этот скрипт закинуть в отдельный файл -->
+    <!--     <script type="text/javascript">
       window.onload = function () {
         document
           .getElementById('contact-form')
@@ -727,8 +728,6 @@
             );
           });
       };
-    </script>
-
-    <script src="./js/pop-up.js"></script>
+    </script> -->
   </body>
 </html>
