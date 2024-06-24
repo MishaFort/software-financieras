@@ -446,7 +446,7 @@
               <form
                 style="z-index: 1"
                 name="form"
-                autocomplete="off"
+                autocomplete="on"
                 id="contact-form"
               >
                 <div class="input">
@@ -463,8 +463,6 @@
                       name="user-name"
                       id="user-name"
                       placeholder="Nombre"
-                      pattern="[a-zA-Z0-9à-üÀ-Ü_ ]{1,30}"
-                      required
                     />
                   </div>
                 </div>
@@ -483,8 +481,6 @@
                       name="user-email"
                       id="user-email"
                       placeholder="Correo electrónico"
-                      pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-                      required
                     />
                   </div>
                 </div>
@@ -503,8 +499,6 @@
                       name="country"
                       id="country"
                       placeholder="País"
-                      pattern="[a-zA-Z '-]{1,40}"
-                      required
                     />
                   </div>
                 </div>
@@ -526,8 +520,6 @@
                       name="company-name"
                       id="company-name"
                       placeholder="Financiera"
-                      pattern="[a-zA-Z0-9à-üÀ-Ü_ ]{1,30}"
-                      required
                     />
                   </div>
                 </div>
@@ -546,8 +538,6 @@
                       name="user-tel"
                       id="user-tel"
                       placeholder="Teléfono (WhatsApp)"
-                      pattern="[0-9+ ()-]{8,20}"
-                      required
                     />
                   </div>
                 </div>
@@ -569,7 +559,6 @@
                       name="datetime"
                       id="datetime"
                       placeholder="Fecha y Hora"
-                      required
                     />
                   </div>
                 </div>
@@ -582,22 +571,36 @@
                 />
 
                 <div class="input__button-container">
-                  <button class="button__contact" type="submit">Enviar</button>
+                  <button
+                    class="button__contact"
+                    id="popup-trigger"
+                    type="submit"
+                  >
+                    Enviar
+                  </button>
 
                   <div class="checkbox">
                     <input
-                      class="checkbox__input visually-hidden"
+                      class="checkbox__input"
                       type="checkbox"
                       id="terms-conditions"
                       name="terms-conditions"
-                      required
                     />
-                    <label class="checkbox__label" for="terms-conditions">
+                    <label
+                      class="checkbox__label"
+                      for="terms-conditions"
+                      id="terms-conditions-label"
+                    >
                       Acepto las políticas de privacidad
                     </label>
                   </div>
                 </div>
               </form>
+            </div>
+          </div>
+          <div class="backdrop is-hidden">
+            <div class="popup">
+              <p class="popup__text">Tu solicitud está enviando...</p>
             </div>
           </div>
         </div>
@@ -635,6 +638,8 @@
       AOS.init();
     </script>
 
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
@@ -646,23 +651,7 @@
         });
       })();
     </script>
-    <script type="text/javascript">
-      window.onload = function () {
-        document
-          .getElementById('contact-form')
-          .addEventListener('submit', function (event) {
-            event.preventDefault();
-            emailjs.sendForm('service_pnqld1g', 'contact_form', this).then(
-              () => {
-                console.log('SUCCESS!');
-                window.location.reload();
-              },
-              error => {
-                console.log('FAILED...', error);
-              }
-            );
-          });
-      };
-    </script>
+
+    <script src="./js/contact-form-validator.js"></script>
   </body>
 </html>

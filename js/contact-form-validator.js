@@ -2,27 +2,88 @@ const modal = document.querySelector('.backdrop');
 
 const validator = new JustValidate('#contact-form');
 validator
-  .addField('#user-name', [{ rule: 'required' }])
-  .addField('#user-email', [{ rule: 'required' }, { rule: 'email' }])
-  .addField('#country', [{ rule: 'required' }])
-  .addField('#company-name', [{ rule: 'required' }])
   .addField(
-    '#user-tel',
+    '#user-name',
     [
-      { rule: 'required', errorMessage: 'FullJopa' },
+      { rule: 'required', errorMessage: '&#8613; El campo es obligatorio' },
       {
         rule: 'customRegexp',
-        value: /[0-9+ ()-]{8,20}/gi,
-        errorMessage: 'Invalid field',
+        value: /^[ñA-Za-z _]*[ñA-Za-z][ñA-Za-z _]{1,30}/gi,
+        errorMessage: '&#8613; Campo no válido',
       },
     ],
     {
-      errorFieldCssClass: 'custom-errors-container123',
-      successMessage: 'Everything looks good!',
+      successMessage: '¡Todo se ve bien!',
     }
   )
-  .addField('#datetime', [{ rule: 'required' }])
-  .addField('#terms-conditions', [{ rule: 'required' }])
+  .addField(
+    '#user-email',
+    [
+      { rule: 'required', errorMessage: '&#8613; El campo es obligatorio' },
+      { rule: 'email', errorMessage: '&#8613; Campo no válido' },
+    ],
+    {
+      successMessage: '¡Todo se ve bien!',
+    }
+  )
+  .addField(
+    '#country',
+    [
+      { rule: 'required', errorMessage: '&#8613; El campo es obligatorio' },
+      {
+        rule: 'customRegexp',
+        value: /^[ñA-Za-z _]*[ñA-Za-z][ñA-Za-z _]{1,40}/gi,
+        errorMessage: '&#8613; Campo no válido',
+      },
+    ],
+    {
+      successMessage: '¡Todo se ve bien!',
+    }
+  )
+  .addField(
+    '#company-name',
+    [
+      { rule: 'required', errorMessage: '&#8613; El campo es obligatorio' },
+      {
+        rule: 'customRegexp',
+        value: /^[ñA-Za-z _]*[ñA-Za-z][ñA-Za-z _]{1,40}/gi,
+        errorMessage: '&#8613; Campo no válido',
+      },
+    ],
+    {
+      successMessage: '¡Todo se ve bien!',
+    }
+  )
+  .addField(
+    '#user-tel',
+    [
+      { rule: 'required', errorMessage: '&#8613; El campo es obligatorio' },
+      {
+        rule: 'customRegexp',
+        value: /[0-9+ ()-]{8,20}/gi,
+        errorMessage: '&#8613; Campo no válido',
+      },
+    ],
+    {
+      successMessage: '¡Todo se ve bien!',
+    }
+  )
+  .addField(
+    '#datetime',
+    [{ rule: 'required', errorMessage: '&#8613; El campo es obligatorio' }],
+    {
+      errorMessage: '&#8613; Campo no válido',
+      successMessage: '¡Todo se ve bien!',
+    }
+  )
+  .addField(
+    '#terms-conditions',
+    [{ rule: 'required', errorMessage: '&#8613; El campo es obligatorio' }],
+    {
+      errorMessage: '&#8613; Campo no válido',
+    }
+  )
+
   .onSuccess(event => {
     modal.classList.toggle('is-hidden');
 

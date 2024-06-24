@@ -517,7 +517,6 @@
                     name="user-name"
                     id="user-name"
                     placeholder="Nombre"
-                    pattern="[a-zA-Z0-9à-üÀ-Ü_ ]{1,30}"
                   />
                 </div>
               </div>
@@ -536,7 +535,6 @@
                     name="user-email"
                     id="user-email"
                     placeholder="Correo electrónico"
-                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
                   />
                 </div>
               </div>
@@ -555,7 +553,6 @@
                     name="country"
                     id="country"
                     placeholder="País"
-                    pattern="[a-zA-Z '-]{1,40}"
                   />
                 </div>
               </div>
@@ -574,7 +571,6 @@
                     name="company-name"
                     id="company-name"
                     placeholder="Financiera"
-                    pattern="[a-zA-Z0-9à-üÀ-Ü_ ]{1,30}"
                   />
                 </div>
               </div>
@@ -593,7 +589,6 @@
                     name="user-tel"
                     id="user-tel"
                     placeholder="Teléfono (WhatsApp)"
-                    pattern="[0-9+ ()-]{8,20}"
                   />
                 </div>
               </div>
@@ -692,11 +687,7 @@
       AOS.init();
     </script>
 
-    <script src="./js/pop-up.js"></script>
-
     <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
-
-    <script src="./js/contact-form-validator.js"></script>
 
     <script
       type="text/javascript"
@@ -710,24 +701,6 @@
       })();
     </script>
 
-    <!-- Этот скрипт закинуть в отдельный файл -->
-    <!--     <script type="text/javascript">
-      window.onload = function () {
-        document
-          .getElementById('contact-form')
-          .addEventListener('submit', function (event) {
-            event.preventDefault();
-            emailjs.sendForm('service_pnqld1g', 'contact_form', this).then(
-              () => {
-                console.log('SUCCESS!');
-                window.location.reload();
-              },
-              error => {
-                console.log('FAILED...', error);
-              }
-            );
-          });
-      };
-    </script> -->
+    <script src="./js/contact-form-validator.js"></script>
   </body>
 </html>

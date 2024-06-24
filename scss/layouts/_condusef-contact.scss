@@ -1,6 +1,7 @@
 .condusef-contact {
   padding-top: 36px;
   background-color: var(--color-background-cool);
+  overflow-x: hidden;
 
   @media screen and (min-width: $bp-desktop) {
     padding-top: 63px;
